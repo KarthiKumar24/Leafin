@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.abt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url("/Images/About Image-02.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  color: #7da666;
+  text-align: center;
+  position: relative;
+}
+
+.abt-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 40, 30, 0.5);
+}
+
+/* Details section styling */
+.abt-details {
+  position: relative;
+  padding: 20px;
+}
+
+#heading {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #f4f4f4;
+}
+
+#para {
+  font-size: 1.2em;
+  color: #f4f4f4;
+  margin: 0;
+}
+
+/* Our mission */
+.our-mission {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-img {
+  flex: 1;
+  margin-left: 100px;
+  gap: 10px;
+  display: flex;
+}
+
+.zigzag-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.item2,
+.item1 {
+  width: 30%;
+}
+
+.grid-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #7da666;
+  border-radius: 8px;
+}
+
+.grid-content h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #f4f4f4;
+}
+
+.grid-content p {
+  font-size: 1em;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Responsive styling */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* About */
+  .abt-container {
+    padding: 10px;
+  }
+  #heading {
+    font-size: 2em;
+  }
+  #para {
+    font-size: 1em;
+  }
+  /* Our Mission */
+  .grid-content h1 {
+    margin-bottom: 10px;
+  }
+  .grid-img{
+    margin-left: 20px;
+  }
+  .item2,
+  .item1 {
+    width: 45%;
+  }
+  .grid-content p {
+    font-size: 19px;
+    color: #f4f4f4;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 600px) {
+  .abt-container{
+    width: 160%;
+    text-align: justify;
+    padding: 20px;
+  }
+  #para{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .item1{
+    display: none;
+  }
+  .item2{
+    width: 160%;
+    display: flex;
+    gap: 5px;
+  }
+  .our-mission{
+    width: 160%;
+    display: block;
+  }
+  .grid-img{
+    margin-left: 0px;
+  }
+}
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+        <label class="logo">
+            <img src="Images/leave in logo.png" alt="">LeafIn
+        </label>
+        <ul class="leaf-nav">
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <button class="nav-btn-ul"><a class="btn-log" href="login.html">Login</a></button>
+        </ul>
+        <button class="nav-btn-container"><a class="btn-log" href="login.html">Login</a></button>
+    </nav>
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" placeholder="Your Name">
+                <input type="email" class="field" placeholder="Your Email">
+                <!-- <input type="text" class="field" placeholder="Your Phone No."> -->
+                <textarea name="field" class="field area" placeholder="Message"></textarea>
+                <button class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+    }
+
+    .container::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(Images/contact\ LeafIn-01.jpg) no-repeat center;
+        background-size: cover;
+        z-index: -1;
+        filter: blur(30px);
+    }
+
+    .contact-box {
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+
+    }
+
+    .left {
+        height: 100%;
+        background: url(Images/contact\ LeafIn-01.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    .right {
+        padding: 25px 40px;
+    }
+
+    h2 {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: #7da666;
+    }
+
+    .field {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: 2px solid rgba(0, 0, 0, 0);
+        background-color: rgba(230, 230, 230, 230);
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .3s;
+        border-radius: 10px;
+    }
+
+    .field:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .field:focus {
+        background-color: #fff;
+        border: 2px solid #7da666;
+    }
+
+    .area {
+        min-height: 150px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #7da666;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    .btn:hover {
+        background-color: #7da666d9;
+    }
+
+    @media screen and (max-width:880px) {
+        .contact-box {
+            grid-template-columns: 1fr;
+        }
+
+        .left {
+            height: 200px;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        .container {
+            padding: 20px;
+            display: flex;
+            width: 160%;
+            height: 150%;
+
+        }
+
+        .contact-box {
+            grid-template-columns: 1fr;
+            padding: 20px;
+        }
+
+        .right {
+            padding: 15px 20px;
+        }
+    }
+</style>
+
+</html>
