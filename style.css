@@ -775,11 +775,6 @@ footer .content {
     /* width: 150vw; */
     /* height: 200vh; */
   }
-  body {
-    overflow-x: hidden;
-    width: 100%;
-    height: auto;
-  }
   /* Navigation Bar */
   #checkbtn {
     display: block;
