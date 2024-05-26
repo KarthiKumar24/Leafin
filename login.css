@@ -65,7 +65,6 @@
     align-items: center;
     height: 100vh;
     font-family: "Arial", sans-serif;
-    overflow: hidden;
   }
   .img img {
     /* display: none; */
