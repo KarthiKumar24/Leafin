@@ -7,12 +7,6 @@
   /* color: #2DC653;
     background-color: #1AA63D; */
 }
-
-body {
-  padding: 0px;
-  margin: 0px;
-  overflow-x: hidden;
-}
 /* fontsize */
 .fs-42 {
   font-size: clamp(1rem, 0.5357rem + 2.3214vw, 2.625rem);
